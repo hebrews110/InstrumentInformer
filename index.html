@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Instrument Informer</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="jquery.ui.touch-punch.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/object-fit-images/3.2.4/ofi.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/2.0.5/velocity.min.js"></script>
+        <link rel="stylesheet" href="music1.css">
+        <script src="music1.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+        
+    </head>
+    <body>
+        <div class="screen-container">
+            <div class="instrument-viewer invisible" style="left: -100%;">
+                <div class="instrument-description">
+                    <img class="instrument-image" src="harp.png" alt="" data-object-fit="contain"/>
+                    <div class="instrument-text">
+                        <span class="instrument-heading">Harp</span>
+                        <p></p>
+                        <div class="instrument-info-wrapper">
+                            <div class="instrument-info">
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="instrument-controls">
+                    <audio controls class="instrument-audio">Your browser does not support audio.</audio>
+                </div>
+                <button onclick="goBack();" class="btn btn-dark btn-circle"><i class="fas fa-arrow-left"></i></button>
+            </div>
+            <div class="families invisible">
+                <h1 style="font-family: serif; font-size: 40px;">Instrument Informer</h1>
+                <p></p>
+                <h3>Choose a family:</h3>
+                <p></p>
+                <button class="instrument-btn btn btn-dark">Strings</button>
+                <button class="instrument-btn btn btn-dark">Woodwinds</button>
+                <button class="instrument-btn btn btn-dark">Brass</button>
+                <button class="instrument-btn btn btn-dark">Percussion</button>
+                <p></p>
+                <span>Instrument sounds are from Freesound, used in accordance with the
+                Creative Commons <a href="https://creativecommons.org/licenses/by/3.0/">Attribution</a>
+                and <a href="https://creativecommons.org/licenses/by-nc/3.0/">Attribution Noncommercial</a>
+                licenses.</span>
+                <p></p>
+                <span>Instrument information is from Wikipedia and used in accordance with the Creative Commons
+                <a href="https://creativecommons.org/licenses/by-sa/3.0/">Attribution/Share-Alike</a> license.</span>
+            </div>
+        </div>
+        <script>$(function () { objectFitImages(); });</script>
+    </body>
+</html>
