@@ -193,3 +193,8 @@ body > div {
 .instrument-viewer > button {
     float: left;
 }
+
+.instrument-info a {
+    font-size: 75%;
+    color: #222;
+}
